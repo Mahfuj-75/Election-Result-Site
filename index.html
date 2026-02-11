@@ -532,6 +532,44 @@
   opacity: .95;
 }
 
+.liveBadge{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 14px;
+  border-radius:999px;
+  border:1px solid var(--border);
+  background:#fff;
+  box-shadow: var(--shadow2);
+}
+
+.liveDot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:#ef4444; /* red */
+  box-shadow: 0 0 0 0 rgba(239,68,68,.55);
+  animation: livePulse 1.2s infinite;
+}
+
+.liveText{
+  font-weight:900;
+  letter-spacing:.6px;
+  font-size:14px;
+  color:#ef4444;
+}
+
+.liveSub{
+  font-size:13px;
+  color: var(--muted);
+  font-weight:700;
+}
+
+@keyframes livePulse{
+  0%   { transform: scale(1);   box-shadow: 0 0 0 0 rgba(239,68,68,.55); }
+  70%  { transform: scale(1.15);box-shadow: 0 0 0 10px rgba(239,68,68,0); }
+  100% { transform: scale(1);   box-shadow: 0 0 0 0 rgba(239,68,68,0); }
+}
 
 
   </style>
@@ -564,6 +602,12 @@
   <i class="fa-solid fa-link"></i>
   Logo link:
   <span id="logoLinkText">(set in JS)</span>
+</div>
+
+<div class="liveBadge" id="liveBadge">
+  <span class="liveDot"></span>
+  <span class="liveText">LIVE</span>
+  <span class="liveSub"></span>
 </div>
 
 
@@ -686,6 +730,7 @@
     totalVotes: "০",
     opponentVotes: "০"   
   },
+  
     
       ],
 
