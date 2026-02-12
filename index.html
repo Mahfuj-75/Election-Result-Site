@@ -708,16 +708,22 @@
         <div class="partyGrid" id="partyGrid"></div>
 
         <div class="sectionTitle" style="margin-top:18px;">
-          <h2><i class="fa-solid fa-star"></i> Heavyweight প্রার্থী (Special)</h2>
-          <div class="pill"><i class="fa-solid fa-image"></i> ছবি + ভোট + জয়/হার</div>
-        </div>
-        <div class="candidatesGrid" id="candidatesGrid"></div>
-
-        <div class="sectionTitle" style="margin-top:18px;">
           <h2><i class="fa-solid fa-check-to-slot"></i> গণভোট</h2>
           <div class="pill"><i class="fa-solid fa-percent"></i> শতাংশ পরে যোগ করবে</div>
         </div>
         <div class="refGrid" id="refGrid"></div>
+
+        <div class="sectionTitle" style="margin-top:18px;">
+          <h2><i class="fa-solid fa-star"></i> Heavyweight প্রার্থী</h2>
+          <div class="pill"><i class="fa-solid fa-image"></i> ছবি + ভোট + জয়/হার</div>
+        </div>
+        <div class="candidatesGrid" id="candidatesGrid"></div>
+
+        <!-- <div class="sectionTitle" style="margin-top:18px;">
+          <h2><i class="fa-solid fa-check-to-slot"></i> গণভোট</h2>
+          <div class="pill"><i class="fa-solid fa-percent"></i> শতাংশ পরে যোগ করবে</div>
+        </div>
+        <div class="refGrid" id="refGrid"></div> -->
 
       </div>
 
@@ -774,7 +780,7 @@
       logoLink: "fbcastor.jpg", // e.g. "https://your-site.com/logo.png"
 
       topStats: [
-        { label: "ফল ঘোষিত", value: "০", icon: "fa-circle-check", theme: "t-green", iconBg: "bg-green" },
+        { label: "ফল ঘোষিত", value: "- / ৩০০", icon: "fa-circle-check", theme: "t-green", iconBg: "bg-green" },
         { label: "মোট আসন", value: "৩০০", icon: "fa-landmark", theme: "t-blue", iconBg: "bg-blue" },
         { label: "স্থগিত", value: "১", icon: "fa-circle-pause", theme: "t-red", iconBg: "bg-red" },
         { label: "ভোটার উপস্থিতি", value: "০%", icon: "fa-user-check", theme: "t-lgreen", iconBg: "bg-lgreen" },
@@ -788,6 +794,8 @@
         { name: "বাংলাদেশ ইসলামী আন্দোলন", seats: "০", logo: "Symbol_of_Islami_Andolan_Bangladesh.svg.png" },
         { name: "স্বতন্ত্র", seats: "০", logo: "" },
       ],
+
+      
 
       // Heavyweight candidates (add/remove as you want)
       candidates: [
@@ -887,20 +895,83 @@
   },
    
     {
-    name: "",
-    party: "",
-    seat: "",
-    photo: "",
+    name: "মির্জা ফখরুল ইসলাম আলমগীর",
+    party: "বিএনপি",
+    seat: "ঠাকুরগাঁও-১",
+    photo: "farkhrul.jpg",
+    status: "-",
+    totalVotes: "০",
+    opponentVotes: "০"   
+  },
+    {
+    name: "মামুনুল হক",
+    party: "খেলাফত মজলিশ",
+    seat: "ঢাকা-১৩",
+    photo: "Mamunul_Haque.jpg",
+    status: "-",
+    totalVotes: "০",
+    opponentVotes: "০"   
+  },
+    {
+    name: "রুমিন ফারহানা",
+    party: "স্বতন্ত্র",
+    seat: "ব্রাহ্মণবাড়িয়া- 2",
+    photo: "Rumeen_Farhana.jpg",
+    status: "-",
+    totalVotes: "০",
+    opponentVotes: "০"   
+  },
+    {
+    name: "আব্দুল হান্নান মাসুদ",
+    party: "এনসিপি",
+    seat: "নোয়াখালী-৬",
+    photo: "hannnamsud.jpg",
+    status: "-",
+    totalVotes: "০",
+    opponentVotes: "০"   
+  },
+    {
+    name: "সৈয়দ ফয়জুল করিম",
+    party: "ইসলামী আন্দোলন বাংলাদেশ",
+    seat: "বরিশাল-৬",
+    photo: "Syed_Faizul_Karim.jpg",
     status: "-",
     totalVotes: "০",
     opponentVotes: "০"   
   },
     
+    {
+    name: "শামা ওবায়েদ",
+    party: "বিএনপি",
+    seat: "ফরিদপুর-২",
+    photo: "shama.jpg",
+    status: "-",
+    totalVotes: "০",
+    opponentVotes: "০"   
+  },
+    {
+    name: "মুহাম্মদ রাশেদ খাঁন",
+    party: "বিএনপি",
+    seat: "ঝিনাইদহ-৪",
+    photo: "rashedkhan.jpg",
+    status: "-",
+    totalVotes: "০",
+    opponentVotes: "০"   
+  },
+     {
+    name: "ইশরাক হোসেন",
+    party: "বিএনপি",
+    seat: "ঢাকা-৬",
+    photo: "ishraque.jpg",
+    status: "-",
+    totalVotes: "০",
+    opponentVotes: "০"   
+  },
       ],
 
       referendum: {
-        yes: "০",  // মোট 'হ্যাঁ' ভোট
-        no: "০"    // মোট 'না' ভোট
+        yes: "-",  // মোট 'হ্যাঁ' ভোট
+        no: "-"    // মোট 'না' ভোট
       },
 
       infoCards: [
